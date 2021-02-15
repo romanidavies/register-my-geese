@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="01-how-many-geese">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Registering your geese</h1>
+
+      <form class="form" action="02a-i-dont-know-which-breed" method="post">
+
+<!-- my specific goose question goes here -->
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which breed of geese do you own?
+            </h1>
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div id="waste-hint" class="govuk-hint">
+            Select the links to find more information on each breed.
+          </div>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/barnacle-goose/"> Barnacle Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/brent-goose/"> Brent Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/canadian-goose/"> Canadian Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/eygptian-goose/"> Eygptian Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/greylag-goose/"> Greylag Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/pink-footed-goose/"> Pink-footed Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/taiga-bean-goose/"> Taiga Bean Geese </a>
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/tundra-bean-goose/"> Tundra Bean Geese </a> 
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                I don't know
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Other
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+<!-- end of my specific goose related questions go here -->
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

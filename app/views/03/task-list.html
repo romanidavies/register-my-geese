@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Apply for or update a Business e-services account
+      </h1>
+
+      <ol class="app-task-list">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section"> </span> Add a new administrator's details
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="eservices" aria-describedby="eligibility-status">
+                  Add the new administrator's details
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__tag" id="eligibility-status">NOT STARTED</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-status">
+                  Sign your application
+                </a>
+              </span>
+              <strong class="govuk-tag app-task-list__tag" id="read-declaration-status">CANNOT START YET</strong>
+            </li>
+          </ul>
+        </li>
+
+       <p class="govuk-body govuk-!-margin-bottom-7">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
+
+      </ol>
+              <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Continue
+            </button>
+          </div>
+    </div>
+  </div>
+
+{% endblock %}

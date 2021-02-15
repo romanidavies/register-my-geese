@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="02-which-breed-of-geese-do-you-own">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Registering your geese</h1>
+
+      <form class="form" action="03-do-your-geese-create-a-taxable-income" method="post">
+
+<!-- my specific goose question goes here -->
+
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+                Can you provide more detail about your geese to try and identify their breed?
+              </label>
+            </h1>
+            <div id="more-detail-hint" class="govuk-hint">
+              Include the colour of feathers, height and weight of geese, what colour their feet are and any other details you believe are related.
+            </div>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+          </div>
+
+
+<!-- end of my specific goose related questions go here -->
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

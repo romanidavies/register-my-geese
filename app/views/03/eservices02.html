@@ -1,0 +1,499 @@
+{% extends "layout.html" %} {% block pageTitle %} Question page {% endblock %} {% block beforeContent %} <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">Add the new administrator's details</h1>
+	</div>
+</div>
+<form class="form" action="" method="post">
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<form class="form" action="" method="post">
+				<div class="govuk-form-group">
+					<fieldset class="govuk-fieldset">
+						<div>
+							<h3 class="govuk-heading-m">What is the new administrator's name?
+              </h3>
+						</div>
+						 <p class="govuk-body govuk-!-margin-bottom-7">Your administrator will create and manage accounts for your organisation's authoried users.</p>
+						<div class="govuk-form-group">
+						  <label class="govuk-label" for="firstname">
+						   First name
+						  </label>
+						  <input class="govuk-input govuk-input--width-10" id="firstname" type="text" value="Sarah"
+							</div>
+							<p class="govuk-body govuk-!-margin-bottom-3"></p>
+							<div class="govuk-form-group">
+								<label class="govuk-label" for="lastname">
+									Last name
+								</label>
+								<input class="govuk-input govuk-input--width-10" id="lastname type="text" value="Phillips"
+								</div>
+
+								<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button1" onclick="hideButton1()">Submit </button>
+
+
+									<div class="govuk-!-padding-bottom-3 toggle_container">
+
+									<div>
+										<h3 class="govuk-heading-m">What is the new administrator's address?
+										</h3>
+									</div>
+									<div class="govuk-form-group">
+										<label class="govuk-label" for="firstname">
+										 UK Postcode
+										</label>
+										<input class="govuk-input govuk-input--width-10" id="postcode" type="text" value="PL6 5WS"
+										</div>
+										<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+											<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button2" onclick="hideButton2()">Submit </button>
+
+												<div class="govuk-!-padding-bottom-3 toggle_container">
+
+												<div>
+													<h3 class="govuk-heading-m">What is the new administrator's address?
+													</h3>
+												</div>
+												<div class="govuk-form-group">
+												  <label class="govuk-label" for="selectaddress">
+												    Select an address
+												  </label>
+												  <select class="govuk-select" id="selectaddress" name="selectaddress">
+												    <option value="seatoncourt">Seaton Court, 2 William Prance Rd, Plymouth PL6 5WS</option>
+												  </select>
+												</div>
+													<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+													<details class="govuk-details" data-module="govuk-details">
+											  <summary class="govuk-details__summary">
+											    <span class="govuk-details__summary-text">
+											      I can't find my address in the list
+											    </span>
+											  </summary>
+												<div class="govuk-form-group">
+												  <label class="govuk-label" for="building">
+												   Building and street
+												  </label>
+												  <input class="govuk-input govuk-input--width-20" id="building" type="text" value="Seaton Court"
+													</div>
+													<p class="govuk-body govuk-!-margin-bottom-3"></p>
+													<div class="govuk-form-group">
+														<input class="govuk-input govuk-input--width-20" id="street" type="text" value="2 William Prance Rd"
+														</div>
+													<p class="govuk-body govuk-!-margin-bottom-3"></p>
+													<div class="govuk-form-group">
+														<label class="govuk-label" for="city">
+															Town or city
+														</label>
+														<input class="govuk-input govuk-input--width-10" id="city" type="text" value="Plymouth"
+														</div>
+														<p class="govuk-body govuk-!-margin-bottom-3"></p>
+														<div class="govuk-form-group">
+															<label class="govuk-label" for="country">
+																Country
+															</label>
+															<input class="govuk-input govuk-input--width-10" id="country" type="text" value="United Kingdom"
+															</div>
+															<p class="govuk-body govuk-!-margin-bottom-3"></p>
+															<div class="govuk-form-group">
+																<label class="govuk-label" for="postcode">
+																	Postcode
+																</label>
+																<input class="govuk-input govuk-input--width-5" id="postcode" type="text" value="PL6 5WS"
+																</div>
+																<p class="govuk-body govuk-!-margin-bottom-3"></p>
+											</details>
+
+													<p class="govuk-body govuk-!-margin-bottom-1"></p>
+
+													<div class="govuk-form-group">
+														<label class="govuk-label" for="lastname">
+															DX Address (optional)
+														</label>
+														<input class="govuk-input govuk-input--width-10" id="dx"
+														</div>
+
+
+
+														<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button3" onclick="hideButton3()">Submit </button>
+
+									<div class="govuk-!-padding-bottom-3 toggle_container">
+
+											<hr style="margin-bottom:25px;">
+
+							<div class="govuk-form-group">
+								<fieldset class="govuk-fieldset">
+									<div>
+										<h3 class="govuk-heading-m">Administrator's contact details
+										</h3>
+									</div>
+									<div class="govuk-form-group">
+										<label class="govuk-label" for="telephone">
+										 Telephone number
+										</label>
+										<input class="govuk-input govuk-input--width-10" id="telephone" type="text" value="07700900457"
+										</div>
+										<p class="govuk-body govuk-!-margin-bottom-3"></p>
+										<div class="govuk-form-group">
+											<label class="govuk-label" for="email">
+												Email address
+											</label>
+											<input class="govuk-input govuk-input--width-10" id="email" type="text" value="sarah.phillips@example.com"
+											</div>
+
+											<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button4" onclick="hideButton4()">Submit </button>
+
+								<div class="govuk-!-padding-bottom-3 toggle_container">
+
+									<div class="govuk-form-group">
+								  <fieldset class="govuk-fieldset">
+										<div>
+											<h3 class="govuk-heading-m">How does the new administrator want to recieve their security credentials?
+											</h3>
+										</div>
+								    <div class="govuk-radios">
+								      <div class="govuk-radios__item">
+								        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+								        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+								          Email
+								        </label>
+								      </div>
+								      <div class="govuk-radios__item">
+								        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+								        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+								          Post
+								        </label>
+								      </div>
+								    </div>
+								  </fieldset>
+
+									<p class="govuk-body govuk-!-margin-bottom-3"></p>
+
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button5" onclick="hideButton5()">Submit </button>
+
+									<div class="govuk-!-padding-bottom-3 toggle_container">
+										<div>
+										<table class="govuk-table">
+											<div>
+												<h3 class="govuk-heading-m">Review your administrators
+												</h3>
+											</div>
+									<p class="govuk-body govuk-!-margin-bottom-7">You can add as many administrators as you need for your organisation.</p>
+									<dl class="govuk-summary-list">
+									  <div class="govuk-summary-list__row">
+									    <dt class="govuk-summary-list__key">
+									      Name
+									    </dt>
+									    <dd class="govuk-summary-list__value">
+									      Sarah Phillips
+									    </dd>
+									    <dd class="govuk-summary-list__actions">
+									      <a class="govuk-link" href="/03/eservices02">
+									        Change<span class="govuk-visually-hidden"> name</span>
+									      </a>
+									    </dd>
+									  </div>
+									  <div class="govuk-summary-list__row">
+									    <dt class="govuk-summary-list__key">
+									      Administrator's address
+									    </dt>
+									    <dd class="govuk-summary-list__value">
+									      Seaton Court<br>2 William Prance Rd<br>Plymouth<br>United Kingdom<br>PL6 5WS
+									    </dd>
+									    <dd class="govuk-summary-list__actions">
+									      <a class="govuk-link" href="/03/eservices03">
+									        Change<span class="govuk-visually-hidden"> address</span>
+									      </a>
+									    </dd>
+									  </div>
+									  <div class="govuk-summary-list__row">
+									    <dt class="govuk-summary-list__key">
+									      Contact details
+									    </dt>
+									    <dd class="govuk-summary-list__value">
+									      <p class="govuk-body">07700 900457</p>
+									      <p class="govuk-body">sarah.phillips@example.com</p>
+									    </dd>
+									    <dd class="govuk-summary-list__actions">
+									      <a class="govuk-link" href="/03/eservices04">
+									        Change<span class="govuk-visually-hidden"> contact details</span>
+									      </a>
+									    </dd>
+									  </div>
+									</dl>
+										    <tr class="govuk-table__row">
+										      <th scope="row" class="govuk-table__header"> <a href="/03/eservices05"> Add another administrator </a></th>
+										      <td class="govuk-table__cell"></td>
+										    </tr>
+										</table>
+										<div class="govuk-button-group">
+										<button class="govuk-button" data-module="govuk-button">
+											Continue
+										</button>
+									</div>
+
+
+								</div>
+									</div>
+							</div>
+						</div>
+	</form>
+
+
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	        $('input[type="radio"]').click(function() {
+	            var inputValue = $(this).attr("value");
+	            var targetBox = $("." + inputValue);
+	            $(".contentbox").not(targetBox).hide();
+	            $(targetBox).show();
+	        });
+	    });
+
+
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$(".toggle_container").hide();
+	$("button.reveal").click(function(){
+	    $(this).toggleClass("active").next().slideToggle("fast");
+
+	    if ($.trim($(this).text()) === 'Submit') {
+	        $(this).text('Unsubmit');
+	    } else {
+	        $(this).text('Submit');
+
+	    }
+
+	    return false;
+	});
+	 $("a[href='" + window.location.hash + "']").parent(".reveal").click();
+	});
+	</script>
+
+	<script type="text/javascript">
+	function hideButton1() {
+		var x = document.getElementById("button1");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton2() {
+		var x = document.getElementById("button2");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton3() {
+		var x = document.getElementById("button3");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton4() {
+		var x = document.getElementById("button4");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton5() {
+		var x = document.getElementById("button5");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+	<style type="text/css">
+	    .contentbox {
+	        padding: 0px;
+	        display: none;
+	        width: 100%;
+	    }
+
+	</style>
+<!-- <script>
+	$(document).ready(function() {
+	         $("input[name$='question1']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc").hide();
+	             $("#question1" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question2']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc2").hide();
+	             $("#question2" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question3']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc3").hide();
+	             $("#question3" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question4']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc4").hide();
+	             $("#question4" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question5']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc5").hide();
+	             $("#question5" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question6']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc6").hide();
+	             $("#question6" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question7']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc7").hide();
+	             $("#question7" + test).show();
+	         });
+	     });
+
+
+	     $(document).ready(function() {
+	         $("input[name$='question8']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc8").hide();
+	             $("#question8" + test).show();
+	         });
+	     });
+
+
+	     $(document).ready(function() {
+	         $("input[name$='question9']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc9").hide();
+	             $("#question9" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question10']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc10").hide();
+	             $("#question10" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question11']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc11").hide();
+	             $("#question11" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question12']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc12").hide();
+	             $("#question12" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question13']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc13").hide();
+	             $("#question13" + test).show();
+	         });
+	     });
+
+	     $(document).ready(function() {
+	         $("input[name$='question14']").click(function() {
+	             var test = $(this).val();
+
+	             $("div.desc14").hide();
+	             $("#question14" + test).show();
+	         });
+	     });
+</script>
+<style>
+	.desc {
+	     display:none;
+	     }
+	     .desc2 {
+	     display:none;
+	     }
+	     .desc3 {
+	     display:none;
+	     }
+	     .desc4 {
+	     display:none;
+	     }
+	     .desc5 {
+	     display:none;
+	     }
+	     .desc6 {
+	     display:none;
+	     }
+</style>{% endblock %} -->
