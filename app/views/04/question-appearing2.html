@@ -1,0 +1,793 @@
+{% extends "layout.html" %} {% block pageTitle %} Question page {% endblock %} {% block beforeContent %} <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h1 class="govuk-heading-xl">Registering your geese</h1>
+	</div>
+</div>
+<form class="form" action="/url/of/next/page" method="post">
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<form class="form" action="" method="post">
+				<div class="govuk-form-group">
+					<fieldset class="govuk-fieldset">
+						<div>
+							<h3 class="govuk-heading-m">Do you know what breed your geese are?
+              </h3>
+						</div>
+						<div class="govuk-radios" id="myRadioGroup">
+							<div class="govuk-radios__item">
+								<input class="govuk-radios__input" type="radio" name="question1" value="A" id="Q1A">
+								<label class="govuk-label govuk-radios__label" for="Q1A">Yes</label>
+							</div>
+							<div class="govuk-radios__item">
+								<input class="govuk-radios__input" type="radio" name="question1" value="B" id="Q1B">
+								<label class="govuk-label govuk-radios__label" for="Q1B">No</label>
+							</div>
+							<div class="govuk-grid-row desc" id="question1A">
+								<div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+									<hr style="margin-bottom:25px;">
+									<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                            Select the breed of your geese
+                          </h3>
+									<div class="govuk-form-group">
+										<fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+											<div id="waste-hint" class="govuk-hint">Select the links to find more information on each breed.</div>
+											<div class="govuk-checkboxes">
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2A" name="question2" type="checkbox" value="A">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2A"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/barnacle-goose/"> Barnacle Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2B" name="question2" type="checkbox" value="B">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2B"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/brent-goose/"> Brent Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2C" name="question2" type="checkbox" value="C">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2C"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/canadian-goose/"> Canadian Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2D" name="question2" type="checkbox" value="D">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2D"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/eygptian-goose/"> Eygptian Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2E" name="question2" type="checkbox" value="E">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2E"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/greylag-goose/"> Greylag Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2F" name="question2" type="checkbox" value="F">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2F"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/pink-footed-goose/"> Pink-footed Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2G" name="question2" type="checkbox" value="G">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2G"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/taiga-bean-goose/"> Taiga Bean Geese </a>
+													</label>
+												</div>
+												<div class="govuk-checkboxes__item">
+													<input class="govuk-checkboxes__input" id="Q2H" name="question2" type="checkbox" value="H">
+													<label class="govuk-label govuk-checkboxes__label" for="Q2H"> <a href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/tundra-bean-goose/"> Tundra Bean Geese </a>
+													</label>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2A">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                                  background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                                  padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                                    We recommend that you visit
+                                                  </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G2 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                                  We recommend this action because:
+                                                </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Barnacle Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                                  If you require further information:
+                                                </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2B">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                                background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                                padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                                  We recommend that you visit
+                                                </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G5 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                                We recommend this action because:
+                                              </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Brent Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                                If you require further information:
+                                              </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2C">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                              background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                              padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                                We recommend that you visit
+                                              </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G6 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                              We recommend this action because:
+                                            </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Canadian Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                              If you require further information:
+                                            </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2D">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                            background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                            padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                              We recommend that you visit
+                                            </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G3 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                            We recommend this action because:
+                                          </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Egyptian Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                            If you require further information:
+                                          </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2E">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                          background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                          padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                            We recommend that you visit
+                                          </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G9 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                          We recommend this action because:
+                                        </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Greylag Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                          If you require further information:
+                                        </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2F">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                        background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                        padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                          We recommend that you visit
+                                        </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G10 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                        We recommend this action because:
+                                      </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Pink-footed Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                        If you require further information:
+                                      </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2G">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                      background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                      padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                        We recommend that you visit
+                                      </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G7 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                      We recommend this action because:
+                                    </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Taiga Bean Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                      If you require further information:
+                                    </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2H">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                    background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                    padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                      We recommend that you visit
+                                    </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G4 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                    We recommend this action because:
+                                  </h3>
+										<ul class='govuk-body'>
+											<li>you indicated that you own Tundra Bean Geese</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                    If you require further information:
+                                  </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2F">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr class="govuk-!-margin-bottom-8">
+										<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                                        background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                                        padding: 40px 20px;text-align: center;">
+											<h1 style="margin-bottom: 5px;font-size: 45px;">
+                                          We recommend that you visit
+                                        </h1>
+											<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/125" target="_blank">register my geese for a G1 license</a>
+										</div>
+										<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                                        We recommend this action because:
+                                      </h3>
+										<ul class='govuk-body'>
+											<li>the breed of geese you own</li>
+										</ul>
+										<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                                        If you require further information:
+                                      </h3>
+										<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="govuk-grid-row desc" id="question1B">
+						<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+							<hr style="margin-bottom:25px;">
+							<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+        Are your geese native to the United Kingdom (UK)?
+      </h3>
+							<div id="waste-hint" class="govuk-hint">Only <a style="color: #505a5f !important;" href="https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/ducks-geese-and-swans/" target="_blank">9 breeds</a> are native to the UK.</div>
+							<div class="govuk-radios" id="myRadioGroup5">
+								<div class="govuk-radios__item">
+									<input class="govuk-radios__input" type="radio" name="question2" value="I" id="Q2I">
+									<label class="govuk-label govuk-radios__label" for="Q2I">Yes</label>
+								</div>
+								<div class="govuk-radios__item">
+									<input class="govuk-radios__input" type="radio" name="question2" value="J" id="Q2J">
+									<label class="govuk-label govuk-radios__label" for="Q2J">No</label>
+								</div>
+								<div class="govuk-grid-row desc2" id="question2I">
+									<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+										<hr style="margin-bottom:25px;">
+										<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+        Which colour feathers does your geese have?
+      </h3>
+										<div class="govuk-radios" id="myRadioGroup6">
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="A" id="Q3A">
+												<label class="govuk-label govuk-radios__label" for="Q3A">Black</label>
+											</div>
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="B" id="Q3B">
+												<label class="govuk-label govuk-radios__label" for="Q3B">Cream</label>
+											</div>
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="C" id="Q3C">
+												<label class="govuk-label govuk-radios__label" for="Q3C">Orange</label>
+											</div>
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="D" id="Q3D">
+												<label class="govuk-label govuk-radios__label" for="Q3D">Brown</label>
+											</div>
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="D" id="Q3D">
+												<label class="govuk-label govuk-radios__label" for="Q3D">Grey</label>
+											</div>
+											<div class="govuk-radios__item">
+												<input class="govuk-radios__input" type="radio" name="question3" value="D" id="Q3D">
+												<label class="govuk-label govuk-radios__label" for="Q3D">White</label>
+											</div>
+										</div>
+									</div>
+									<div class="govuk-grid-row desc3" id="question3A">
+										<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+											<hr class="govuk-!-margin-bottom-8">
+											<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+          background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+          padding: 40px 20px;text-align: center;">
+												<h1 style="margin-bottom: 5px;font-size: 45px;">
+            We recommend that you visit
+          </h1>
+												<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/29" target="_blank">register my geese for a G2 license </a>
+											</div>
+											<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+          We recommend this action because:
+        </h3>
+											<ul class='govuk-body'>
+												<li>you indicated that you own Barnacle Geese</li>
+											</ul>
+											<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+          If you require further information:
+        </h3>
+											<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+										</div>
+									</div>
+									<div class="govuk-grid-row desc3" id="question3B">
+										<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+											<hr class="govuk-!-margin-bottom-8">
+											<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+      background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+      padding: 40px 20px;text-align: center;">
+												<h1 style="margin-bottom: 5px;font-size: 45px;">
+        We recommend that you visit
+      </h1>
+												<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/29" target="_blank">register my geese for a G4 license </a>
+											</div>
+											<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+      We recommend this action because:
+    </h3>
+											<ul class='govuk-body'>
+												<li>you indicated that you own Tundra Bean Geese</li>
+											</ul>
+											<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+      If you require further information:
+    </h3>
+											<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+										</div>
+									</div>
+									<div class="govuk-grid-row desc3" id="question3C">
+										<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+											<hr class="govuk-!-margin-bottom-8">
+											<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+    background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+    padding: 40px 20px;text-align: center;">
+												<h1 style="margin-bottom: 5px;font-size: 45px;">
+      We recommend that you visit
+    </h1>
+												<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/29" target="_blank">register my geese for a G4 license </a>
+											</div>
+											<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+    We recommend this action because:
+  </h3>
+											<ul class='govuk-body'>
+												<li>you indicated that you own Egyptian Geese</li>
+											</ul>
+											<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+    If you require further information:
+  </h3>
+											<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+										</div>
+									</div>
+									<div class="govuk-grid-row desc3" id="question3D">
+										<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+											<hr style="margin-bottom:25px;">
+											<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+      Which colour legs do your geese have?
+    </h3>
+											<div class="govuk-radios" id="myRadioGroup5">
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" type="radio" name="question4" value="A" id="Q4A">
+													<label class="govuk-label govuk-radios__label" for="Q4A">Black</label>
+												</div>
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" type="radio" name="question4" value="B" id="Q4B">
+													<label class="govuk-label govuk-radios__label" for="Q4B">Brown</label>
+												</div>
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" type="radio" name="question4" value="C" id="Q4C">
+													<label class="govuk-label govuk-radios__label" for="Q4C">Orange</label>
+												</div>
+												<div class="govuk-radios__item">
+													<input class="govuk-radios__input" type="radio" name="question4" value="C" id="Q4C">
+													<label class="govuk-label govuk-radios__label" for="Q4C">Pink</label>
+												</div>
+											</div>
+										</div>
+										<div class="govuk-grid-row desc4" id="question4A">
+											<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+												<hr class="govuk-!-margin-bottom-8">
+												<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                      background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                      padding: 40px 20px;text-align: center;">
+													<h1 style="margin-bottom: 5px;font-size: 45px;">
+                        We recommend that you visit
+                      </h1>
+													<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G5 license</a>
+												</div>
+												<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                      We recommend this action because:
+                    </h3>
+												<ul class='govuk-body'>
+													<li>you indicated that you own Brent Geese</li>
+												</ul>
+												<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                      If you require further information:
+                    </h3>
+												<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+											</div>
+										</div>
+										<div class="govuk-grid-row desc4" id="question4B">
+											<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+												<hr class="govuk-!-margin-bottom-8">
+												<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+                    background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+                    padding: 40px 20px;text-align: center;">
+													<h1 style="margin-bottom: 5px;font-size: 45px;">
+                      We recommend that you visit
+                    </h1>
+													<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G6 license</a>
+												</div>
+												<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+                    We recommend this action because:
+                  </h3>
+												<ul class='govuk-body'>
+													<li>you indicated that you own Canada Geese</li>
+												</ul>
+												<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+                    If you require further information:
+                  </h3>
+												<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+											</div>
+										</div>
+										<div class="govuk-grid-row desc4" id="question4C">
+											<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+												<hr style="margin-bottom:25px;">
+												<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+                  Which best describes your geese beak length?
+                </h3>
+												<div class="govuk-radios" id="myRadioGroup5">
+													<div class="govuk-radios__item">
+														<input class="govuk-radios__input" type="radio" name="question5" value="A" id="Q5A">
+														<label class="govuk-label govuk-radios__label" for="Q5A">Short</label>
+													</div>
+													<div class="govuk-radios__item">
+														<input class="govuk-radios__input" type="radio" name="question5" value="B" id="Q5B">
+														<label class="govuk-label govuk-radios__label" for="Q5B">Medium length</label>
+													</div>
+													<div class="govuk-radios__item">
+														<input class="govuk-radios__input" type="radio" name="question5" value="C" id="Q5C">
+														<label class="govuk-label govuk-radios__label" for="Q5C">Long</label>
+													</div>
+												</div>
+											</div>
+											<div class="govuk-grid-row desc5" id="question5B">
+												<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+													<hr class="govuk-!-margin-bottom-8">
+													<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+      background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+      padding: 40px 20px;text-align: center;">
+														<h1 style="margin-bottom: 5px;font-size: 45px;">
+        We recommend that you visit
+      </h1>
+														<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G7 license</a>
+													</div>
+													<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+      We recommend this action because:
+    </h3>
+													<ul class='govuk-body'>
+														<li>you indicated that you own Taiga Bean Geese</li>
+													</ul>
+													<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+      If you require further information:
+    </h3>
+													<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+												</div>
+											</div>
+											<div class="govuk-grid-row desc5" id="question5C">
+												<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+													<hr class="govuk-!-margin-bottom-8">
+													<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+    background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+    padding: 40px 20px;text-align: center;">
+														<h1 style="margin-bottom: 5px;font-size: 45px;">
+      We recommend that you visit
+    </h1>
+														<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G8 license</a>
+													</div>
+													<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+    We recommend this action because:
+  </h3>
+													<ul class='govuk-body'>
+														<li>you indicated that you own White Fronted Geese</li>
+													</ul>
+													<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+    If you require further information:
+  </h3>
+													<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+												</div>
+											</div>
+											<div class="govuk-grid-row desc5" id="question5A">
+												<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+													<hr style="margin-bottom:25px;">
+													<h3 class="govuk-heading-m" style="margin-bottom: 10px;">
+      Which is your geese's natural environment?
+    </h3>
+													<div class="govuk-radios" id="myRadioGroup5">
+														<div class="govuk-radios__item">
+															<input class="govuk-radios__input" type="radio" name="question6" value="A" id="Q6A">
+															<label class="govuk-label govuk-radios__label" for="Q6A">Farmland</label>
+														</div>
+														<div class="govuk-radios__item">
+															<input class="govuk-radios__input" type="radio" name="question6" value="B" id="Q6B">
+															<label class="govuk-label govuk-radios__label" for="Q6B">Wetland</label>
+														</div>
+													</div>
+												</div>
+												<div class="govuk-grid-row desc6" id="question6A">
+													<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+														<hr class="govuk-!-margin-bottom-8">
+														<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+          background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+          padding: 40px 20px;text-align: center;">
+															<h1 style="margin-bottom: 5px;font-size: 45px;">
+            We recommend that you visit
+          </h1>
+															<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G9 license</a>
+														</div>
+														<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+          We recommend this action because:
+        </h3>
+														<ul class='govuk-body'>
+															<li>you indicated that you own Greylag Geese</li>
+														</ul>
+														<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+          If you require further information:
+        </h3>
+														<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+													</div>
+												</div>
+												<div class="govuk-grid-row desc6" id="question6B">
+													<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+														<hr class="govuk-!-margin-bottom-8">
+														<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+        background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+        padding: 40px 20px;text-align: center;">
+															<h1 style="margin-bottom: 5px;font-size: 45px;">
+          We recommend that you visit
+        </h1>
+															<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese for a G10 license</a>
+														</div>
+														<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+        We recommend this action because:
+      </h3>
+														<ul class='govuk-body'>
+															<li>you indicated that you own Pink Footed Geese</li>
+														</ul>
+														<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+        If you require further information:
+      </h3>
+														<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="govuk-grid-row desc2" id="question2J">
+					<div class="govuk-grid-column-full govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+						<hr class="govuk-!-margin-bottom-8">
+						<div class="govuk-inset-text govuk-!-margin-bottom-4" style="    margin-right: 100px;
+        background-color: #f5f5f5;color: #ffffff;background: #00703c;border-left: 0px;font-size: 25px;
+        padding: 40px 20px;text-align: center;">
+							<h1 style="margin-bottom: 5px;font-size: 45px;">
+          We recommend that you visit
+        </h1>
+							<a style="color: #ffffff !important;" href="https://help.landregistry.gov.uk/app/answers/detail/a_id/27" target="_blank">register my geese that are not native to the UK</a>
+						</div>
+						<h3 class="govuk-heading-m govuk-!-padding-top-4 govuk-!-margin-bottom-2">
+        We recommend this action because:
+      </h3>
+						<ul class='govuk-body'>
+							<li>your geese breed is not native to the UK</li>
+							<li>you must register the breed before registering your geese</li>
+						</ul>
+						<h3 class="govuk-heading-s" style="margin-top: 30px;margin-bottom: 15px;">
+        If you require further information:
+      </h3>
+						<button class="govuk-button govuk-button--secondary" data-module="govuk-button" data-module="govuk-button" onclick="window.location.href='/UserResearch/GuidedAssistance/Bereavement/V7/form1.html'">Contact us</button>
+					</div>
+				</div>
+		</div>
+	</div>
+	</form>
+	<script>
+		$(document).ready(function() {
+		         $("input[name$='question1']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc").hide();
+		             $("#question1" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question2']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc2").hide();
+		             $("#question2" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question3']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc3").hide();
+		             $("#question3" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question4']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc4").hide();
+		             $("#question4" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question5']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc5").hide();
+		             $("#question5" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question6']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc6").hide();
+		             $("#question6" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question7']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc7").hide();
+		             $("#question7" + test).show();
+		         });
+		     });
+
+
+		     $(document).ready(function() {
+		         $("input[name$='question8']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc8").hide();
+		             $("#question8" + test).show();
+		         });
+		     });
+
+
+		     $(document).ready(function() {
+		         $("input[name$='question9']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc9").hide();
+		             $("#question9" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question10']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc10").hide();
+		             $("#question10" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question11']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc11").hide();
+		             $("#question11" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question12']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc12").hide();
+		             $("#question12" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question13']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc13").hide();
+		             $("#question13" + test).show();
+		         });
+		     });
+
+		     $(document).ready(function() {
+		         $("input[name$='question14']").click(function() {
+		             var test = $(this).val();
+
+		             $("div.desc14").hide();
+		             $("#question14" + test).show();
+		         });
+		     });
+	</script>
+	<style>
+		.desc {
+		     display:none;
+		     }
+		     .desc2 {
+		     display:none;
+		     }
+		     .desc3 {
+		     display:none;
+		     }
+		     .desc4 {
+		     display:none;
+		     }
+		     .desc5 {
+		     display:none;
+		     }
+		     .desc6 {
+		     display:none;
+		     }
+	</style>{% endblock %}

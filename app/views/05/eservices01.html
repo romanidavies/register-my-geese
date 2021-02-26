@@ -1,21 +1,20 @@
-{% extends "layout.html" %} {% block pageTitle %} Question page {% endblock %} {% block beforeContent %} <a class="govuk-back-link" href="/03/eservicesv2">Back</a>
+{% extends "layout.html" %} {% block pageTitle %} Question page {% endblock %} {% block beforeContent %} <a class="govuk-back-link" href="/05/check-your-answers04">Back</a>
 {% endblock %} {% block content %}
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-two-thirds">
 		<h1 class="govuk-heading-xl">Add the new administrator's details</h1>
 	</div>
 </div>
-<form class="form" action="/url/of/next/page" method="post">
+<form class="form" action="/05/check-your-answers05" method="post">
 		<div class="govuk-form-group">
-		<div class="govuk-grid-column-full">
+		<!-- <div class="govuk-grid-column-full"> -->
 				<form class="form" action="" method="post">
 									<div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
+      <h3 class="govuk-heading-m">
         Does your new administrator have the same address as your previously entered administrator?
-      </h1>
-    </legend>
+      </h3>
+
     <div class="govuk-radios" id="myRadioGroup">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="Q1A" name="question1" type="radio" value="A">
@@ -34,10 +33,11 @@
 						<div class="govuk-grid-row desc" id="question1A">
 						<p class="govuk-body govuk-!-margin-bottom-3"></p>
 						<div>
+							<p class="govuk-body govuk-!-margin-bottom-8"></p>
 							<h3 class="govuk-heading-m">What is the new administrator's name?
               </h3>
 						</div>
-						 <p class="govuk-body govuk-!-margin-bottom-7">Your administrator will create and manage accounts for your organisation's authoried users.</p>
+						 <p class="govuk-body govuk-!-margin-bottom-3">Your administrator will create and manage accounts for your organisation's authoried users.</p>
 						<div class="govuk-form-group">
 						  <label class="govuk-label" for="firstname">
 						   First name
@@ -54,12 +54,13 @@
 
 								<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button1" onclick="hideButton1()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button1" onclick="hideButton1()">Continue </button>
 
 
 									<div class="govuk-!-padding-bottom-3 toggle_container">
 
 									<div>
+										<p class="govuk-body govuk-!-margin-bottom-8"></p>
 										<h3 class="govuk-heading-m">What is the new administrator's address?
 										</h3>
 									</div>
@@ -73,11 +74,12 @@
 
 											<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button2" onclick="hideButton2()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button2" onclick="hideButton2()">Continue </button>
 
 												<div class="govuk-!-padding-bottom-3 toggle_container">
 
 												<div>
+													<p class="govuk-body govuk-!-margin-bottom-8"></p>
 													<h3 class="govuk-heading-m">What is the new administrator's address?
 													</h3>
 												</div>
@@ -144,15 +146,14 @@
 
 														<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button3" onclick="hideButton3()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button3" onclick="hideButton3()">Continue </button>
 
 									<div class="govuk-!-padding-bottom-3 toggle_container">
-
-											<hr style="margin-bottom:25px;">
 
 							<div class="govuk-form-group">
 								<fieldset class="govuk-fieldset">
 									<div>
+										<p class="govuk-body govuk-!-margin-bottom-8"></p>
 										<h3 class="govuk-heading-m">Administrator's contact details
 										</h3>
 									</div>
@@ -172,13 +173,14 @@
 
 											<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button4" onclick="hideButton4()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button4" onclick="hideButton4()">Continue </button>
 
 								<div class="govuk-!-padding-bottom-3 toggle_container">
 
 									<div class="govuk-form-group">
 								  <fieldset class="govuk-fieldset">
 										<div>
+											<p class="govuk-body govuk-!-margin-bottom-8"></p>
 											<h3 class="govuk-heading-m">How does the new administrator want to recieve their security credentials?
 											</h3>
 										</div>
@@ -200,12 +202,15 @@
 
 									<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button5" onclick="hideButton5()">Submit </button>
+									  <button class="govuk-button" onclick="location.href=/05/check-your-answers05">Save and continue
+											</button>
+<!-- <button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button5" onclick="location.href=/04/eservices08">Submit </button> -->
 
-									<div class="govuk-!-padding-bottom-3 toggle_container">
+									<!-- <div class="govuk-!-padding-bottom-3 toggle_container">
 										<div>
 										<table class="govuk-table">
 											<div>
+												<p class="govuk-body govuk-!-margin-bottom-8"></p>
 												<h3 class="govuk-heading-m">Review your administrators
 												</h3>
 											</div>
@@ -219,7 +224,7 @@
 									      Sarah Phillips
 									    </dd>
 									    <dd class="govuk-summary-list__actions">
-									      <a class="govuk-link" href="/03/eservices02">
+									      <a class="govuk-link" href="/04/eservices02">
 									        Change<span class="govuk-visually-hidden"> name</span>
 									      </a>
 									    </dd>
@@ -232,7 +237,7 @@
 									      Seaton Court<br>2 William Prance Rd<br>Plymouth<br>United Kingdom<br>PL6 5WS
 									    </dd>
 									    <dd class="govuk-summary-list__actions">
-									      <a class="govuk-link" href="/03/eservices03">
+									      <a class="govuk-link" href="/04/eservices03">
 									        Change<span class="govuk-visually-hidden"> address</span>
 									      </a>
 									    </dd>
@@ -246,7 +251,7 @@
 									      <p class="govuk-body">sarah.phillips@example.com</p>
 									    </dd>
 									    <dd class="govuk-summary-list__actions">
-									      <a class="govuk-link" href="/03/eservices04">
+									      <a class="govuk-link" href="/04/eservices04">
 									        Change<span class="govuk-visually-hidden"> contact details</span>
 									      </a>
 									    </dd>
@@ -261,7 +266,7 @@
 												Joe Bloggs
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices02">
+												<a class="govuk-link" href="/04/eservices02">
 													Change<span class="govuk-visually-hidden"> name</span>
 												</a>
 											</dd>
@@ -274,7 +279,7 @@
 												Seaton Court<br>2 William Prance Rd<br>Plymouth<br>United Kingdom<br>PL6 5WS
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices03">
+												<a class="govuk-link" href="/04/eservices03">
 													Change<span class="govuk-visually-hidden"> address</span>
 												</a>
 											</dd>
@@ -288,7 +293,7 @@
 												<p class="govuk-body">joe.bloggs@example.com</p>
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices04">
+												<a class="govuk-link" href="/04/eservices04">
 													Change<span class="govuk-visually-hidden"> contact details</span>
 												</a>
 											</dd>
@@ -307,7 +312,7 @@
 										<button class="govuk-button" data-module="govuk-button">
 											Continue
 										</button>
-									</div>
+									</div> -->
 
 
 								</div>
@@ -325,10 +330,11 @@
 						<div class="govuk-grid-row desc" id="question1B">
 						<p class="govuk-body govuk-!-margin-bottom-3"></p>
 						<div>
+							<p class="govuk-body govuk-!-margin-bottom-8"></p>
 							<h3 class="govuk-heading-m">What is the new administrator's name?
 							</h3>
 						</div>
-						 <p class="govuk-body govuk-!-margin-bottom-7">Your administrator will create and manage accounts for your organisation's authoried users.</p>
+						 <p class="govuk-body govuk-!-margin-bottom-3">Your administrator will create and manage accounts for your organisation's authoried users.</p>
 						<div class="govuk-form-group">
 							<label class="govuk-label" for="firstname">
 							 First name
@@ -345,12 +351,13 @@
 
 								<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button1" onclick="hideButton1()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button6" onclick="hideButton6()">Continue </button>
 
 
 									<div class="govuk-!-padding-bottom-3 toggle_container">
 
 									<div>
+										<p class="govuk-body govuk-!-margin-bottom-8"></p>
 										<h3 class="govuk-heading-m">What is the new administrator's address?
 										</h3>
 									</div>
@@ -364,11 +371,12 @@
 
 											<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button2" onclick="hideButton2()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button7" onclick="hideButton7()">Continue </button>
 
 												<div class="govuk-!-padding-bottom-3 toggle_container">
 
 												<div>
+													<p class="govuk-body govuk-!-margin-bottom-8"></p>
 													<h3 class="govuk-heading-m">What is the new administrator's address?
 													</h3>
 												</div>
@@ -435,15 +443,15 @@
 
 														<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button3" onclick="hideButton3()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button8" onclick="hideButton8()">Continue </button>
 
 									<div class="govuk-!-padding-bottom-3 toggle_container">
 
-											<hr style="margin-bottom:25px;">
 
 							<div class="govuk-form-group">
 								<fieldset class="govuk-fieldset">
 									<div>
+										<p class="govuk-body govuk-!-margin-bottom-8"></p>
 										<h3 class="govuk-heading-m">Administrator's contact details
 										</h3>
 									</div>
@@ -463,13 +471,14 @@
 
 											<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button4" onclick="hideButton4()">Submit </button>
+<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button9" onclick="hideButton9()">Continue </button>
 
 								<div class="govuk-!-padding-bottom-3 toggle_container">
 
 									<div class="govuk-form-group">
 									<fieldset class="govuk-fieldset">
 										<div>
+											<p class="govuk-body govuk-!-margin-bottom-8"></p>
 											<h3 class="govuk-heading-m">How does the new administrator want to recieve their security credentials?
 											</h3>
 										</div>
@@ -491,12 +500,16 @@
 
 									<p class="govuk-body govuk-!-margin-bottom-3"></p>
 
-<button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button5" onclick="hideButton5()">Submit </button>
+									<button class="govuk-button" onclick="location.href='/04/eservices03'">Save and continue
+										</button>
+
+<!-- <button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button" id="button10" onclick="hideButton10()">Submit </button>
 
 									<div class="govuk-!-padding-bottom-3 toggle_container">
 										<div>
 										<table class="govuk-table">
 											<div>
+												<p class="govuk-body govuk-!-margin-bottom-8"></p>
 												<h3 class="govuk-heading-m">Review your administrators
 												</h3>
 											</div>
@@ -510,7 +523,7 @@
 												Sarah Phillips
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices02">
+												<a class="govuk-link" href="/04/eservices02">
 													Change<span class="govuk-visually-hidden"> name</span>
 												</a>
 											</dd>
@@ -523,7 +536,7 @@
 												Seaton Court<br>2 William Prance Rd<br>Plymouth<br>United Kingdom<br>PL6 5WS
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices03">
+												<a class="govuk-link" href="/04/eservices03">
 													Change<span class="govuk-visually-hidden"> address</span>
 												</a>
 											</dd>
@@ -537,7 +550,7 @@
 												<p class="govuk-body">sarah.phillips@example.com</p>
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices04">
+												<a class="govuk-link" href="/04/eservices04">
 													Change<span class="govuk-visually-hidden"> contact details</span>
 												</a>
 											</dd>
@@ -552,7 +565,7 @@
 												Joe Bloggs
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices02">
+												<a class="govuk-link" href="/04/eservices02">
 													Change<span class="govuk-visually-hidden"> name</span>
 												</a>
 											</dd>
@@ -565,7 +578,7 @@
 												Trafalgar House<br>1 Bedford Park<br>Croydon<br>United Kingdom<br>CR0 2AQ
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices03">
+												<a class="govuk-link" href="/04/eservices03">
 													Change<span class="govuk-visually-hidden"> address</span>
 												</a>
 											</dd>
@@ -579,14 +592,14 @@
 												<p class="govuk-body">joe.bloggs@example.com</p>
 											</dd>
 											<dd class="govuk-summary-list__actions">
-												<a class="govuk-link" href="/03/eservices04">
+												<a class="govuk-link" href="/04/eservices04">
 													Change<span class="govuk-visually-hidden"> contact details</span>
 												</a>
 											</dd>
 										</div>
 									</dl>
 												<tr class="govuk-table__row">
-													<th scope="row" class="govuk-table__header"> <a href="/03/eservices07"> Add another administrator</a></th>
+													<th scope="row" class="govuk-table__header"> <a href="/04/eservices07"> Add another administrator</a></th>
 													<td class="govuk-table__cell"></td>
 												</tr>
 										</table>
@@ -594,7 +607,7 @@
 										<button class="govuk-button" data-module="govuk-button">
 											Continue
 										</button>
-									</div>
+									</div> -->
 
 
 								</div>
@@ -605,12 +618,9 @@
 						</div>
 						</div>
 						</div>
-						</div>
 				<div>
 				</form>
-				</div>
-				</div>
-			</form>
+				<!-- </div> -->
 
 
 	<script type="text/javascript">
@@ -693,7 +703,7 @@
 	}
 	</script>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	function hideButton5() {
 		var x = document.getElementById("button5");
 		if (x.style.display === "none") {
@@ -703,7 +713,68 @@
 				event.preventDefault();
 		}
 	}
+	</script> -->
+
+	<script type="text/javascript">
+	function hideButton6() {
+		var x = document.getElementById("button6");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
 	</script>
+
+	<script type="text/javascript">
+	function hideButton7() {
+		var x = document.getElementById("button7");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton8() {
+		var x = document.getElementById("button8");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton9() {
+		var x = document.getElementById("button9");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
+	<script type="text/javascript">
+	function hideButton10() {
+		var x = document.getElementById("button10");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+				event.preventDefault();
+		}
+	}
+	</script>
+
 	<style type="text/css">
 	    .contentbox {
 	        padding: 0px;

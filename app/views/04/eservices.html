@@ -230,15 +230,20 @@
 								  </div>
 								</dl>
 								<tr class="govuk-table__row">
-									<th scope="row" class="govuk-table__header"> <a href="/03/eservices07"> Add another administrator</a></th>
+									<th scope="row" class="govuk-table__header"> <a href="/04/eservices01"> Add another administrator</a></th>
 									<td class="govuk-table__cell"></td>
 								</tr>
 									</table>
-									<div class="govuk-button-group">
-									<button class="govuk-button" data-module="govuk-button">
-										Continue
-									</button>
-								</div>
+
+									<form action="/04/confirmation" method="post" novalidate>
+
+						        <input type="hidden" name="answers-checked" value="true">
+
+						        <button type="submit" class="govuk-button" data-module="govuk-button">
+						          Accept and send
+						        </button>
+
+						      </form>
 
 
 								</div>

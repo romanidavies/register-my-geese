@@ -1,0 +1,545 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript: history.go(-1)">Back</a>
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">
+   Dealing with boundary matters
+</h1>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+      <form class="form" action="boundarymatters-choice" method="post">
+         <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+
+                <div>
+                  <h3 class="govuk-heading-m">Please choose from the following options</h3>
+               </div>
+
+               <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-1" id="content-1">
+                     <label class="govuk-label govuk-radios__label" for="content-1">
+                     I want help to resolve a boundary dispute
+                     </label>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                     <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-2" id="content-2">
+                     <label class="govuk-label govuk-radios__label" for="content-2">
+                     I want to identify who owns a boundary, or is responsible for its repair and maintenance
+                     </label>
+                  </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-3" id="content-3">
+                    <label class="govuk-label govuk-radios__label" for="content-3">
+                    I want to confirm the position of a boundary
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-4" id="content-4">
+                    <label class="govuk-label govuk-radios__label" for="content-4">
+                    I believe there is an error on the title plan
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-5" id="content-5">
+                    <label class="govuk-label govuk-radios__label" for="content-5">
+                    I want advice about planning permissions
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-6" id="content-6">
+                    <label class="govuk-label govuk-radios__label" for="content-6">
+                    I want advice about overhanging branches and hedges
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-7" id="content-7">
+                    <label class="govuk-label govuk-radios__label" for="content-7">
+                    I want advice about drains and sewers
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-8" id="content-8">
+                    <label class="govuk-label govuk-radios__label" for="content-8">
+                    Noisy neighbours and fly-tipping
+                    </label>
+                 </div>
+
+                 <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" name="boundary-matters-options" type="radio" value="content-9" id="content-9">
+                    <label class="govuk-label govuk-radios__label" for="content-9">
+                    Background information
+                    </label>
+                 </div>
+
+
+               </div>
+            </fieldset>
+         </div>
+      </form>
+   </div>
+</div>
+
+<div class="govuk-grid-row content-1 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+        <h3 class="govuk-heading-s">In short, Land Registry cannot:</h3>
+
+        <ul class="govuk-body govuk-!-margin-bottom-5">
+            <li>resolve or become involved in a boundary dispute</li>
+            <li>enforce the contents of the register</li>
+            <li>make someone comply with any covenants referred to on the register, for example, rebuild a wall</li>
+        </ul>
+
+        <p>Ultimately, only the court or the Land Registration division of the Property Chamber can determine the exact position of a boundary or other disputed issue.</p>
+        <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an amicable agreement. This could avoid other costly or complex options.</p>
+
+        <button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button">
+            Show me more
+          </button>
+
+
+
+        <div class="govuk-!-padding-bottom-3 toggle_container">
+
+            <hr style="margin-bottom:25px;">
+
+            <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Talking to your neighbour</a> with a view to reaching an amicable agreement is usually the preferred thing to do. If you are unable to resolve a problem via an informal discussion, then you may wish to consider the possibility of entering into a formal boundary agreement with them about the position of the boundary or who is responsible for its maintenance. Land Registry can then note the agreement on the individual registers.</p>
+
+            <p>Another potentially complex and costly option, particularly if agreement cannot be reached with your neighbour beforehand, is a process called 'determining the boundary', but it should not be thought of as a means to resolve a dispute.</p>
+
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    I do not think an agreement is viable
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p>If you cannot come to an agreement, <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">get independent legal advice</a> on what options are available. We cannot offer legal advice or recommend a legal practitioner.</p>
+
+                    <p>You may want to contact the Royal Institution of Chartered Surveyors (RICS). RICS members are professionally qualified surveyors and have considerable experience in advising on property disputes. <a href="https://www.rics.org/uk/products/dispute-resolution-service/" target="_blank">The Dispute Resolution Service (DRS) - RICS</a> is the world's largest provider of alternative dispute resolution services.</p>
+
+                    <p><a href="https://www.rics.org/uk/products/dispute-resolution-service/drs-services/neighbour-disputes-service/" target="_blank">Read about their neighbour dispute services and how to contact them.</a></p>
+                </div>
+            </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    I would like to learn more about creating an agreement
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p><a href="https://www.gov.uk/how-to-resolve-neighbour-disputes/talk-to-your-neighbour" target="_blank">Try talking to your neighbour</a> to reach an agreement. If you cannot resolve the problem with an informal discussion, you may be able to create a formal boundary agreement together.</p>
+
+                    <h3 class="govuk-heading-s">This can cover:</h3>
+
+                    <ul class="govuk-body govuk-!-margin-bottom-5">
+                        <li>the position of the boundary</li>
+                        <li>who is responsible for its maintenance</li>
+                    </ul>
+
+                        <p>You should get <a href="https://www.gov.uk/find-a-legal-adviser" target="_blank">independent legal advice</a> if you're thinking about making a boundary agreement. Land Registry cannot do this for you. <a href="https://www.gov.uk/your-property-boundaries" target="_blank">Find out how to create a formal boundary agreement.</a></p>
+
+                        <p>Once an agreement is made, you can apply for us to note the agreement on the individual property registers. This will record the agreement but will not determine or guarantee the exact line of the boundary. <a href="https://www.gov.uk/government/publications/boundary-agreements-and-determined-boundaries" target="_blank">Read more about boundary agreements and when they are appropriate</a>.</p>
+
+                        <p>You cannot use a boundary agreement to sell or give away part of your land to a neighbour.</p>
+                </div>
+              </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    I would like to find out how to identify (determine) the precise boundary
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p>Unlike a general boundary, a determined boundary shows the exact line of the boundary of a registered estate. You should get independent legal advice before deciding if it's the right option for you.</p>
+
+                        <p>You should not use this process to try to resolve a disagreement about the exact location of a boundary. Your application may be referred to a tribunal if your neighbour does not agree with it.</p>
+
+                        <h3 class="govuk-heading-s">The exact line must be identified by the registered owner and (ideally) their neighbour before we can:</h3>
+
+                        <ul class="govuk-body govuk-!-margin-bottom-5">
+                            <li>show the boundary as being a determined boundary</li>
+                            <li>add details to the respective land or property registers</li>
+                        </ul>
+
+                        <p>It is a complex, long and potentially expensive process if the boundaries are not agreed with neighbours beforehand. Sometimes this can have implications on future sales of the property.</p>
+
+                        <h3 class="govuk-heading-s" style="
+                        margin-bottom: 10px;
+                    ">Please consult the following information:</h3>
+                            <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/360" target="_blank">
+                                How to apply for a determined boundary</a></p>
+                </div>
+            </details>
+
+        </div>
+ </div></div>
+
+<div class=" govuk-grid-row content-2 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <p>If a property is <a href="https://www.gov.uk/get-information-about-property-and-land/search-the-index-map" target="_blank">registered</a>, <a href="https://www.gov.uk/get-information-about-property-and-land/search-the-register" target="_blank">check the registers or associated deeds</a> as they may contain information about who owns the boundaries or who is responsible for their maintenance.</p>
+
+        <p>Most registers and deeds do not contain anything specific. Even if they do, they may be out of date because of acts or agreements made between previous owners that we're unaware of.</p>
+
+        <p>If the property is not registered, we will not hold any information. You'll need to find and read your title deeds independently. Have a look at any documents your solicitor may have given to you when you bought your property to see if they mention anything about boundary features.</p>
+
+        <p>We do not provide legal advice and we cannot give out information about your title deeds over the telephone.</p>
+
+        <p><a href="https://www.gov.uk/government/publications/land-registry-plans-boundaries/land-registry-plans-boundaries-practice-guide-40-supplement-3" target="_blank">Read our guidance about general boundaries, ownership and maintenance</a>.</p>
+
+        <button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button">
+            Show me more
+          </button>
+
+        <div class="govuk-!-padding-bottom-3 toggle_container">
+
+            <hr style="margin-bottom:25px;">
+
+            <h3 class="govuk-heading-s">Please select an option:</h3>
+
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    I want to access the register, title plan or title deeds
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p>As mentioned, few registers contain any information about boundary ownership or responsibility. If the property is not registered we will not hold any information at all.</p>
+
+                        <p>You can discover if your own and/or your neighbour's titles are registered and if so, purchase copies of the registers, title plans and any deeds referred to.</p>
+
+                        <h3 class="govuk-heading-s" style="
+                        margin-bottom: 10px;
+                    ">Please consult the following information:</h3>
+                            <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/361" target="_blank">Search for Property Information</a></p>
+
+                </div>
+            </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Show me what to look out for on registers/title plans/deeds
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">Information in the deeds</h3>
+                    <p>A 'T' mark is the most common boundary mark on deed plans. The 'T' mark normally extends into the property which owns the boundary feature or who is responsible for its maintenance. Always read the wording in the deed to make sure this is the case.</p>
+
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">'T' marks that appear in the deed but not on the title plan</h3>
+
+                        <p>We rarely add 'T' marks to the <a href="https://www.gov.uk/government/publications/land-registry-plans-title-plan" target="_blank">title plan</a>. Instead we add a note to the register. For example, "The 'T' mark referred to affects the northern boundary of the land in this title." Sometimes the boundary may be referred to in the wording of the deed without using a 'T' mark.</p>
+
+                    <h3 class="govuk-heading-s" style="margin-bottom: 10px;">T marks that appear in the deed plan but not in the deed</h3>
+                    <p>These have no special force or meaning in law</p>
+
+                    <p><a href="https://www.gov.uk/government/publications/land-registry-plans-boundaries" target="_blank">Read our guidance about general boundaries, ownership and maintenance</a>.</p>
+
+
+                </div>
+              </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    What should I do if the register and title plan are silent or vague?
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <p>If there is no mention of boundaries in the document, there are no genuine alternatives to fall back upon.</p>
+
+                        <h3 class="govuk-heading-s">There are some common beliefs about boundaries, but these have no legal basis, for example, the belief that:</h3>
+
+                        <ul class="govuk-body govuk-!-margin-bottom-5">
+                            <li>boundary features on the right (or on the left) as you look at the property from the front automatically belong to the owner of the property</li>
+                            <li>the post and rails of a fence are always on the owner's side</li>
+                        </ul>
+
+                        <h3 class="govuk-heading-s" style="
+                        margin-bottom: 10px;
+                    ">Please consult the following information:</h3>
+                            <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/362" target="_blank">
+                                Silent or Vague Deeds</a></p>
+                </div>
+            </details>
+
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Tell me about party boundaries or the Party Wall Act 1996
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p>If a boundary feature is considered to be a party boundary, any changes or replacement of the boundary should be done only with the agreement of the adjoining owners.</p>
+
+                        <p><a href="http://www.legislation.gov.uk/ukpga/1996/40/contents" target="_blank">The Party Wall Act 1996</a> controls how works to party walls and other adjacent works is done. The Act does not change ownership of land but it states that the owner who does the work stays as the owner of the work until the neighbour pays a share of the costs.</p>
+
+                        <p>We cannot give specific advice about the Act, you'll need to contact a professional adviser, for example a solicitor, licensed conveyancer or surveyor.</p>
+
+                        <p><a href="https://www.gov.uk/party-walls-building-works" target="_blank">Read more about party walls and building work</a>.</p>
+
+                </div>
+            </details>
+
+        </div>
+
+    </div>
+</div>
+
+<div class=" govuk-grid-row content-3 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <p>We cannot tell you the precise location of a property boundary. Land in England and Wales is registered with what are known as general boundaries.</p>
+
+        <p>A red line on the HM Land Registry <a href="https://www.gov.uk/government/publications/land-registry-plans-title-plan/land-registry-plans-title-plan-practice-guide-40-supplement-5" target="_blank">title plan</a> shows the general boundary, not the exact legal position of the boundary. These lines show the general location of the property in relation to physical features on the ground such as walls, hedges, rivers and roads as marked on the <a href="https://www.gov.uk/government/organisations/ordnance-survey" target="_blank">Ordnance Survey</a> map.</p>
+
+        <p>The legal boundary may or may not be somewhere within that feature or along one side of it. For most people, the general boundary rule meets their needs.</p>
+
+        <p><a href="https://www.gov.uk/government/publications/land-registry-plans-the-basis-of-land-registry-applications/land-registry-plans-the-basis-of-land-registry-plans-practice-guide-40-supplement-1" target="_blank">Read about how Ordnance Survey maps relate to HM Land Registry title plans</a></p>
+
+
+        <button class="govuk-button reveal" data-module="govuk-button" data-module="govuk-button">
+            Show me more
+          </button>
+
+        <div class="govuk-!-padding-bottom-3 toggle_container">
+
+            <hr style="margin-bottom:25px;">
+
+            <h3 class="govuk-heading-s">Please select an option:</h3>
+
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    General Boundaries - More information
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <p>The title deeds rarely identify precise legal boundaries and it is not usually necessary to have these recorded anywhere. As such, when a property is first registered, it's not practical to try to define where the legal boundaries may lie - it is expensive and can lead to unnecessary disputes. The lines on the title plan show the general location of the property based on our <a href="https://www.gov.uk/government/publications/land-registry-plans-title-plan" target="_blank">reasonable interpretation</a> of the deeds.</p>
+
+                        <p>For most people, the general boundary rule meets their needs.</p>
+
+                        <p><a href="https://www.gov.uk/government/publications/land-registry-plans-the-basis-of-land-registry-applications/land-registry-plans-the-basis-of-land-registry-plans-practice-guide-40-supplement-1" target="_blank">Read about how we create HM Land Registry title plans from Ordnance Survey maps</a></p>
+
+                </div>
+            </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Scaling from a Title plan
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <h3 class="govuk-heading-s" style="
+                    margin-bottom: 10px;
+                ">Please consult the following information:</h3>
+                        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/363" target="_blank">
+                            Scaling from a title plan</a></p>
+
+
+                </div>
+              </details>
+
+              <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Boundary Related Legal Presumptions
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+
+                    <p>Documents rarely contain sufficient descriptions to establish the precise position of a boundary. In such cases legal presumptions relating to certain types of boundary feature may be helpful. As registration with general boundaries leaves the exact line of the boundary undetermined, a decision upon a boundary can draw upon any facts, logic, established laws or reasoning relating to a boundary feature and the effect of a legal presumption may be carried forward into a registered title.</p>
+
+                        <p>Other available evidence, such as a declaration as to the position or ownership of a boundary, may make it difficult for the court to decide based upon legal presumption.</p>
+
+                        <p>See <a href="https://www.gov.uk/government/publications/land-registry-plans-boundaries" target="_blank">Supplement 3 s11 to Practice Guide 40</a> for more information.</p>
+                </div>
+            </details>
+
+            <details class="govuk-details" data-module="govuk-details" style="margin-bottom: 10px;">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Background information
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <h3 class="govuk-heading-s" style="
+                    margin-bottom: 10px;
+                ">Please consult the following information:</h3>
+                        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/368" target="_blank">
+                            Background information</a></p>
+
+                </div>
+            </details>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class=" govuk-grid-row content-4 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <p>Write to us if you think the title plan for your land or property is wrong.</p>
+
+        <p>Before you contact us you should be aware that the Land Registration Rules 2003 make no provision for the replacement of title plans when the physical layout of the site has changed.</p>
+
+        <p>Title plans are prepared using the latest Ordnance Survey map published at the time of first registration and, generally, once a title plan has been prepared it will not be replaced. For example, we will not update a title plan solely on the basis that later Ordnance Survey information has been made available, or if land has been removed from the title. As such, later editions of the map may show the same feature in a slightly different place, without this necessarily having any significance in terms of the movement of physical features on the ground.</p>
+
+        <p>If you still think the title plan for your land or property is wrong, you'll need to describe the error and include an Ordnance Survey plan and any other supporting material, for example, certified copies of the property deeds.</p>
+
+        <p>We'll look into the matter. If we find that there's a mistake, we'll explain how it happened and how to put it right. If we do not think there's a mistake, we'll tell you why.</p>
+
+        <h3 class="govuk-heading-s">Send your documents to:</h3>
+        <p>HM Land Registry Citizen Centre<br>
+        PO Box 74<br>
+        Gloucester<br>
+        GL14 9BB</p>
+
+    </div>
+</div>
+
+
+<div class=" govuk-grid-row content-5 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/364" target="_blank">Planning permission</a></p>
+
+
+    </div>
+</div>
+
+
+<div class=" govuk-grid-row content-6 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/365" target="_blank">
+            Overhanging branches</a></p>
+
+    </div>
+</div>
+
+
+<div class=" govuk-grid-row content-7 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/366" target="_blank">
+            Drains and sewers</a></p>
+
+
+    </div>
+</div>
+
+
+<div class=" govuk-grid-row content-8 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/367" target="_blank">
+            Noisy neighbours and fly-tipping</a></p>
+
+    </div>
+</div>
+
+
+<div class=" govuk-grid-row content-9 contentbox">
+    <div class="govuk-grid-column-full govuk-!-padding-bottom-3">
+        <hr style="margin-bottom:25px;">
+
+        <h3 class="govuk-heading-s" style="
+    margin-bottom: 10px;
+">Please consult the following information:</h3>
+        <p><a href="https://help.landregistry.gov.uk/app/answers/detail/a_id/368" target="_blank">
+            Background information</a></p>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            var inputValue = $(this).attr("value");
+            var targetBox = $("." + inputValue);
+            $(".contentbox").not(targetBox).hide();
+            $(targetBox).show();
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(".toggle_container").hide();
+$("button.reveal").click(function(){
+    $(this).toggleClass("active").next().slideToggle("fast");
+
+    if ($.trim($(this).text()) === 'Show me more') {
+        $(this).text('Hide extra content');
+    } else {
+        $(this).text('Show me more');
+    }
+
+    return false;
+});
+ $("a[href='" + window.location.hash + "']").parent(".reveal").click();
+});
+</script>
+
+<style type="text/css">
+    .contentbox {
+        padding: 0px;
+        display: none;
+        width: 100%;
+    }
+
+</style>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/05/eservices">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-xl">Check your answers before sending your application</h1>
+
+      <div>
+      <table class="govuk-table">
+        <div>
+          <p class="govuk-body govuk-!-margin-bottom-8"></p>
+          <h3 class="govuk-heading-m">Your organisation
+          </h3>
+          <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/03/eservices02">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+        </div>
+        <div>
+          <p class="govuk-body govuk-!-margin-bottom-8"></p>
+          <h3 class="govuk-heading-m">Primary administrator
+          </h3>
+        </div>
+
+      <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Name
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Sarah Brown
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/05/edit-name01">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Administrator's address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          Trafalgar House<br>1 Bedford Park<br>Croydon<br>United Kingdom<br>CR0 2AQ
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/05/edit-address01">
+            Change<span class="govuk-visually-hidden"> address</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Contact details
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">07700 900457</p>
+          <p class="govuk-body">sarah.brown@example.com</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/05/edit-contact01">
+            Change<span class="govuk-visually-hidden"> contact details</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Delivery method
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Email</p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/05/edit-delivery01">
+            Change<span class="govuk-visually-hidden"> delivery</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Application signature
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body"></p>
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="/03/eservices04">
+            Upload<span class="govuk-visually-hidden"> signature</span>
+          </a>
+        </dd>
+      </div>
+      </dl>
+      <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"> <a href="/05/eservices01"> Add another administrator</a></th>
+      <td class="govuk-table__cell"></td>
+      </tr>
+      </table>
+
+      <form action="/05/confirmation" method="post" novalidate>
+
+        <input type="hidden" name="answers-checked" value="true">
+
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Accept and send
+        </button>
+
+      </form>
+
+
+      </div>
+      </div>
+      </div>
+
+{% endblock %}
